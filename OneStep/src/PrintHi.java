@@ -19,6 +19,7 @@ public class PrintHi {
 	   }
 	   System.out.println(counter);
 	   System.out.println("comminting the first change to git local");
+	   System.out.println("test1");
 	}
 
 }
