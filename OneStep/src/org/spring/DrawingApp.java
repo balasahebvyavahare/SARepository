@@ -20,6 +20,8 @@ public class DrawingApp {
 		Triangle t = (Triangle) context.getBean("triangle");
 		
 		t.draw();
+		
+		
 	}
 
 }
