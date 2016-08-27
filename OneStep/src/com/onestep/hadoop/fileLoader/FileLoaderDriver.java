@@ -24,7 +24,7 @@ public class FileLoaderDriver extends Configured implements Tool {
 		// TODO Auto-generated method stub
 
 		if (args.length != 2) {
-			System.out.println("Usage: [input] [output]");
+			System.out.println("Usage: [input] [output] xsd,mfnsdf");
 			System.exit(-1);
 		}
 
