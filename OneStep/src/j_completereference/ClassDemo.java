@@ -13,7 +13,6 @@ public class ClassDemo {
 	public static void staticMethodDemo()
 	{
 		System.out.println("I am in static and the value of a is :" + a );
-		
 	}
 
 	public static void main(String[] args) {
