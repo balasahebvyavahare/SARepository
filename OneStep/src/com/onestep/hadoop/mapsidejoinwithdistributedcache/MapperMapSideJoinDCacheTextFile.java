@@ -11,6 +11,9 @@ import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
+import org.apache.log4j.Logger;
+
+
 
 public class MapperMapSideJoinDCacheTextFile extends
 		Mapper<LongWritable, Text, Text, Text> {
@@ -21,6 +24,8 @@ public class MapperMapSideJoinDCacheTextFile extends
 	private Text txtMapOutputKey = new Text("");
 	private Text txtMapOutputValue = new Text("");
 
+	private static final Logger LOG = Logger.getLogger(MapperMapSideJoinDCacheTextFile.class);
+	
 	enum MYCOUNTER {
 		RECORD_COUNT, FILE_EXISTS, FILE_NOT_FOUND, SOME_OTHER_ERROR
 	}
@@ -31,6 +36,9 @@ public class MapperMapSideJoinDCacheTextFile extends
 		Path[] cacheFilesLocal = DistributedCache.getLocalCacheFiles(context
 				.getConfiguration());
 		System.out.println("distributed cache path : " + cacheFilesLocal[0]);
+		
+		LOG.info("Tesing , fuck ");
+		
 		
 		
 		for (Path eachPath : cacheFilesLocal) {

@@ -57,6 +57,15 @@ public class DriverReduceSideJoin extends Configured implements Tool{
 		job.setMapOutputKeyClass(CompositeKeyWritableRSJ.class);
 		job.setMapOutputValueClass(Text.class);
 		
+		job.setPartitionerClass(PartitionerRSJ.class);
+		job.setSortComparatorClass(SortingComparatorRSJ.class);
+		job.setGroupingComparatorClass(GroupingComparatorRSJ.class);
+
+		job.setNumReduceTasks(4);
+		job.setReducerClass(ReducerRSJ.class);
+		job.setOutputKeyClass(Text.class);
+		job.setOutputValueClass(Text.class);
+		
 		FileSystem fs = FileSystem.newInstance(getConf());
 
 		if (fs.exists(outPath)) {
