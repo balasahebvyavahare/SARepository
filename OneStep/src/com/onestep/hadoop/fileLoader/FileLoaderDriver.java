@@ -12,9 +12,10 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 import org.apache.hadoop.util.Tool;
 import org.apache.hadoop.util.ToolRunner;
-import org.hadoop.test.mapreduce.maxTemp.WordcountDriver;
-import org.hadoop.test.mapreduce.maxTemp.WordcountMapper;
-import org.hadoop.test.mapreduce.maxTemp.WordcountReducer;
+
+import com.onestep.hadoop.wordcount.WordcountDriver;
+import com.onestep.hadoop.wordcount.WordcountMapper;
+import com.onestep.hadoop.wordcount.WordcountReducer;
 
 public class FileLoaderDriver extends Configured implements Tool {
 
