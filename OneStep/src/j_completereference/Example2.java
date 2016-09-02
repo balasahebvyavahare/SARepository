@@ -9,6 +9,6 @@ class Example2 {
 		System.out.print("The value of num * 2 is ");
 		System.out.println(num);
 		
-		a+b*c+d
+	
 	}
 }
