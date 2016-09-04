@@ -21,7 +21,7 @@ public class FileLoaderDriver extends Configured implements Tool {
 
 	@Override
 	public int run(String[] args) throws Exception {
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub I am adding this comment just to check the github functionality
 
 		if (args.length != 2) {
 			System.out.println("Usage: [input] [output] xsd,mfnsdf");
