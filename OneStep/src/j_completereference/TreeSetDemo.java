@@ -11,7 +11,7 @@ class MyComp implements Comparator<String> {
 		return (b.compareTo(a));
 	}
 	
-}
+} 
 
 public class TreeSetDemo {
 
@@ -24,7 +24,7 @@ public class TreeSetDemo {
 
 		ts.add("A");
 		ts.add("E");
-		ts.add("C");
+		ts.add("P");
 		ts.add("B");
 		ts.add("F");
 		ts.add("D");
