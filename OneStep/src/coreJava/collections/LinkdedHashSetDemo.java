@@ -1,8 +1,6 @@
-package j_completereference;
+package coreJava.collections;
 
 import java.util.LinkedHashSet;
-
-import j_completereference.HashSetDemo;
 
 public class LinkdedHashSetDemo {
 
@@ -13,6 +11,7 @@ public class LinkdedHashSetDemo {
 		// TODO Auto-generated method stub
 		
 		Employee e = new Employee( 1 , "first");
+		
 		
 		LinkedHashSet<Employee> lhs = new LinkedHashSet<Employee>();
 

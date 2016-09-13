@@ -3,22 +3,22 @@ package j_completereference;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SplitDemo {
+public class SplitDemo1 {
 
-	public static void main(String args[]) {
+	/**
+	 * @param args
+	 */
 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
 		String str = args[0];
-
 		String str1[] = splitAndEscapeQuotes(args[0], "");
-
-		for (int i = 0; i < str1.length; i++)
-			System.out.println(str1[i]);
-
 	}
 
 	public static String[] splitAndEscapeQuotes(String record, String delimiter) {
 
-		char c = '|';
+		char c = (char) Integer.parseInt(delimiter.substring(2), 16);
 
 		char quote = '"';
 		List<String> columns = new ArrayList<String>();
@@ -58,14 +58,6 @@ public class SplitDemo {
 				if (inQuote) {
 
 					delimInside = true;
-
-					addToList(record, i, columns, inQuote, delimInside,
-							isPrevQuoted, lastStart, true, false);
-
-					delimInside = false;
-					isPrevQuoted = false;
-					lastStart = i+1;
-					inQuote = false;
 					continue;
 				}
 				addToList(record, i, columns, inQuote, delimInside,
@@ -81,6 +73,27 @@ public class SplitDemo {
 
 	}
 
+	/**
+	 * Adds the to list.
+	 * 
+	 * @param column
+	 *            the column
+	 * @param currentIndex
+	 *            the current index
+	 * @param columnList
+	 *            the column list
+	 * @param inQuote
+	 *            the in quote
+	 * @param delimInside
+	 *            the delim inside
+	 * @param isPrevQuoted
+	 *            the is prev quoted
+	 * @param lastStart
+	 *            the last start
+	 * @param isDelimiter
+	 *            the is delimiter
+	 * @param isLastChar
+	 */
 	private static void addToList(String column, int currentIndex,
 			List<String> columnList, boolean inQuote, boolean delimInside,
 			boolean isPrevQuoted, int lastStart, boolean isDelimiter,
@@ -89,28 +102,9 @@ public class SplitDemo {
 		if (isPrevQuoted && !delimInside) {
 
 			columnList.add(column.substring(lastStart + 1, currentIndex - 1));
-		} else if (inQuote && delimInside) {
-
-			int maxLength = currentIndex - lastStart;
-			char tempString[] = new char[maxLength];
-			char c = '"';
-			int index = 0;
-			for (int i = lastStart; i < currentIndex ; i++) {
-				if (column.charAt(i) == c)
-					continue;
-				else {
-					tempString[index] =  column.charAt(i);
-					index++;
-				}
-			}
-
-			//System.out.println("temp String" + new String(tempString));
-			columnList.add(new String(tempString));
-			// System.out.print("error case----> " + column + "  lastStart = "
-			// +lastStart + "  currentIndex  " + currentIndex + "  ");
 		} else if (inQuote && isLastChar) {
 
-			columnList.add(column.substring(lastStart + 1, currentIndex + 1));
+			columnList.add(column.substring(lastStart + 1, currentIndex));
 
 		} else {
 

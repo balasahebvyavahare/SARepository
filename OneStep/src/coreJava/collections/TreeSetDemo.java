@@ -1,4 +1,4 @@
-package j_completereference;
+package coreJava.collections;
 
 import java.util.Comparator;
 import java.util.Iterator;
