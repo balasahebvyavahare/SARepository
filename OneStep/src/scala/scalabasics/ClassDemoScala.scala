@@ -1,8 +1,8 @@
 package scala.scalabasics
 
-class Point (val vx : Int , val vy : Int) {
-  var x: Int = vx
-  var y: Int = vy
+class Point (val dx : Int , val dy : Int) {
+  var x: Int = dx
+  var y: Int = dy
 
   def move(dx: Int, dy: Int) {
     x = x + dx
@@ -13,6 +13,8 @@ class Point (val vx : Int , val vy : Int) {
 
   }
 }
+
+
 
 object demo {
   def main(args: Array[String]) {
