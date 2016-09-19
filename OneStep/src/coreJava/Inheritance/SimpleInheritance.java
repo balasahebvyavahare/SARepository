@@ -29,7 +29,7 @@ public class SimpleInheritance {
 		B b = new B();
 		int a = new A().hashCode();
 	
-		System.out.println("hashcode with two people contributing to one repo  " + a);
+		System.out.println("hashcode with two people contributing to one repo1  " + a);
 		
 	}
 
