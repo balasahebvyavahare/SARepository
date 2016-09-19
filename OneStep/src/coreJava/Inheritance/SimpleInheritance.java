@@ -29,7 +29,7 @@ public class SimpleInheritance {
 		B b = new B();
 		int a = new A().hashCode();
 	
-		System.out.println("hashcode Changes from Scala IDE 1 " + a);
+		System.out.println("hashcode   Changes from Scala IDE 1 " + a);
 		
 	}
 
