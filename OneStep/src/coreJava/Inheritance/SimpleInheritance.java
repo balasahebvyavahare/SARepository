@@ -14,7 +14,7 @@ class B extends A{
 	int k = 10;
 	
 	void showIJK(){
-		System.out.println("I and J and K in A " + i + "  " + j + " " + k);
+		System.out.println("I and J and K in    A " + i + "  " + j + " " + k);
 	}
 }
 
