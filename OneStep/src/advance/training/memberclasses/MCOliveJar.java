@@ -44,7 +44,7 @@ public class MCOliveJar {
     }
     
     
-    public class MCOlive {
+    public class MCOlive {    // INNER CLASS
     	
     	public static final long BLACK = 0x000000; // Final fields mentioned in Capital ,  
     	
