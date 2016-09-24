@@ -20,7 +20,7 @@ public class Olive {
 	}
 	
 	public String toString() {
-		return "name: " + this.oliveName + ": " + "color: " +  this.color;
+		return "name: " + this.oliveName + ": " + "color   : " +  this.color;
 	}
 
 }
