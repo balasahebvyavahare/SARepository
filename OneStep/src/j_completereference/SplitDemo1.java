@@ -11,7 +11,7 @@ public class SplitDemo1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+
 		String str = args[0];
 		String str1[] = splitAndEscapeQuotes(args[0], "");
 	}

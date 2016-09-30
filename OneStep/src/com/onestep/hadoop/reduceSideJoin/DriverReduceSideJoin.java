@@ -30,7 +30,7 @@ public class DriverReduceSideJoin extends Configured implements Tool{
 			return -1;
 		}
 		
-		LOG.info("Driver what the fuck is going on");		
+		LOG.info("Driver Maaper Log entry validation");		
 		Configuration conf = getConf();
 		DistributedCache.addCacheFile(new Path(args[3]).toUri(), conf);
 		
@@ -53,7 +53,7 @@ public class DriverReduceSideJoin extends Configured implements Tool{
 		FileOutputFormat.setOutputPath(job, outPath);
 		
 		job.setMapperClass(MapperRSJ.class);
-		LOG.info("Driver what the fuck is going on mapper");	
+		LOG.info("Driver Maaper Log entry validation");	
 		job.setMapOutputKeyClass(CompositeKeyWritableRSJ.class);
 		job.setMapOutputValueClass(Text.class);
 		

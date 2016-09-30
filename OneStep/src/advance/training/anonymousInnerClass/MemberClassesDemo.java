@@ -12,11 +12,11 @@ public class MemberClassesDemo {
 
 		AIOliveJar jar = new AIOliveJar();
 		
-		jar.addOlive("TattiOlive", 0x00000);
-		jar.addOlive("GuOlive", 0x00000);
+		jar.addOlive("TOlive", 0x00000);
+		jar.addOlive("GOlive", 0x00000);
 		jar.addOlive("SmellyOlive", 0x00000);
-		jar.addOlive("TattiAgain_Olive", 0x00000);
-		jar.addOlive("GuBlackForest", 0x00000);
+		jar.addOlive("TAgain_Olive", 0x00000);
+		jar.addOlive("GBlackForest", 0x00000);
 		jar.reportOlive();
 		
 		

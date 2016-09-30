@@ -64,7 +64,7 @@ public class SplitDemo {
 
 					delimInside = false;
 					isPrevQuoted = false;
-					lastStart = i+1;
+					lastStart = i + 1;
 					inQuote = false;
 					continue;
 				}
@@ -95,19 +95,16 @@ public class SplitDemo {
 			char tempString[] = new char[maxLength];
 			char c = '"';
 			int index = 0;
-			for (int i = lastStart; i < currentIndex ; i++) {
+			for (int i = lastStart; i < currentIndex; i++) {
 				if (column.charAt(i) == c)
 					continue;
 				else {
-					tempString[index] =  column.charAt(i);
+					tempString[index] = column.charAt(i);
 					index++;
 				}
 			}
-
-			//System.out.println("temp String" + new String(tempString));
 			columnList.add(new String(tempString));
-			// System.out.print("error case----> " + column + "  lastStart = "
-			// +lastStart + "  currentIndex  " + currentIndex + "  ");
+
 		} else if (inQuote && isLastChar) {
 
 			columnList.add(column.substring(lastStart + 1, currentIndex + 1));
@@ -123,5 +120,4 @@ public class SplitDemo {
 			}
 		}
 	}
-
 }

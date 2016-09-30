@@ -12,10 +12,10 @@ public class MemberClassesDemo {
 
 		EnumOliveJar jar = new EnumOliveJar();
 		
-		jar.addOlive(EnumOlive.GU, 0x00000);
-		jar.addOlive(EnumOlive.HUGAN, 0x00000);
-		jar.addOlive(EnumOlive.TATTI, 0x00000);
-		jar.addOlive(EnumOlive.SANDAS, 0x00000);
+		jar.addOlive(EnumOlive.G, 0x00000);
+		jar.addOlive(EnumOlive.H, 0x00000);
+		jar.addOlive(EnumOlive.T, 0x00000);
+		jar.addOlive(EnumOlive.S, 0x00000);
 		
 		
 		jar.reportOlive();

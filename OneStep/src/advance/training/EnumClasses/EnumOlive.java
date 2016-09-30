@@ -1,7 +1,7 @@
 package advance.training.EnumClasses;
 
 public enum EnumOlive {
-		GU("gu") , TATTI("tatti") , SANDAS("sandas") , HUGAN("hugan") , GOLDEN("goldan");
+		G("g") , T("t") , S("s") , H("h") , GOLDEN("goldan");
 		
 		private String nameAsString;
 		

@@ -35,11 +35,11 @@ public class MapperRSJ  extends Mapper<LongWritable, Text, CompositeKeyWritableR
 	protected void setup(Context context) throws IOException,
 			InterruptedException {
 		
-		LOG.info("Tesing , fuck ");
+		LOG.info("Tesing  ");
 		
 		FileSplit fsFileSplit = (FileSplit) context.getInputSplit();
 		
-		LOG.info("Tesing , fuck " + fsFileSplit.getPath().getName() + Integer.parseInt(context.getConfiguration().get(
+		LOG.info("Tesing" + fsFileSplit.getPath().getName() + Integer.parseInt(context.getConfiguration().get(
 				fsFileSplit.getPath().getName())));
 		
 		intSrcIndex = Integer.parseInt(context.getConfiguration().get(

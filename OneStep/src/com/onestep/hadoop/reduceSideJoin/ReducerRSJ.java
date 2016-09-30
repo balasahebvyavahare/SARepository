@@ -39,11 +39,11 @@ public class ReducerRSJ extends
 		Path[] cacheFilesLocal = DistributedCache.getLocalCacheFiles(context
 				.getConfiguration());
 
-		LOG.info("Tesing , fuck " + cacheFilesLocal[0]);
+		LOG.info("Tesing  " + cacheFilesLocal[0]);
 
 		for (Path eachPath : cacheFilesLocal) {
 			if (eachPath.getName().toString().trim().equals("DEPARTMENTS")) {
-				LOG.info("Tesing , fuck " + "Found the cache file");
+				LOG.info("Tesing " + "Found the cache file");
 				loadDepartmentsHashMap(eachPath, context);
 			}
 		}
@@ -61,7 +61,7 @@ public class ReducerRSJ extends
 			while ((strLineRead = brReader.readLine()) != null) {
 				String deptFieldArray[] = strLineRead.split("\\|");
 
-				LOG.info("fuck mapreduce " + deptFieldArray[0].trim()
+				LOG.info("mapreduce " + deptFieldArray[0].trim()
 						+ deptFieldArray[1].trim());
 
 				DepartmentMap.put(deptFieldArray[0].trim(),

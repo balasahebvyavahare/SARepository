@@ -14,6 +14,7 @@ public class Olive {
 		this.oliveName = oliveName;
 	}
 	
+
 	public Olive(String oliveName, long color) {
 		this(oliveName);
 		this.color = color;
