@@ -24,7 +24,7 @@ public class ArrayListDemo {
 		a.remove(1);
 		
 		//Printing the contents of ArrayList
-		System.out.println("Contents of AL = : " + a );
+		System.out.println("Contents of AL = : " + a ) ;
 		
 		
 		// toArray Method of ArrayList
