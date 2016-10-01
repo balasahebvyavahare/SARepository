@@ -20,9 +20,6 @@ public class DriverMapSideJoinDCacheTxtFile extends Configured implements Tool {
 
 	  Path outputPath = new Path(args[1]);
 	  
-	 
-	  
-	  
 		if (args.length != 3) {
 			System.out
 					.printf("Two parameters are required- <input dir> <output dir>\n");
